@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        String oraby = "donkey";
         sign_in = (Button) findViewById(R.id.signin);
         sign_in.setOnClickListener(new View.OnClickListener() {
             @Override
