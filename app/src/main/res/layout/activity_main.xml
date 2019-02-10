@@ -78,6 +78,7 @@
             android:layout_margin="5dp"
             android:background="@drawable/button_yellow"
             android:text="Sign Up"/>
+
         <Button
             android:layout_width="0dp"
             android:id="@+id/signin"
