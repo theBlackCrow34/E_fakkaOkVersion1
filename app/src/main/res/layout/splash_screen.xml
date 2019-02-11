@@ -5,16 +5,13 @@
     android:layout_width="match_parent"
     android:background="@drawable/back"
     android:layout_height="match_parent"
+    android:gravity="center"
     tools:context=".SplashScreen">
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="120dp"
-        android:layout_marginBottom="120dp"
-        android:layout_marginLeft="100dp"
-        android:layout_marginRight="100dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
         android:id="@+id/image_splash"
-        android:src="@mipmap/ic_launcher"/>
+        android:src="@drawable/logofakka"/>
 
 </LinearLayout>
