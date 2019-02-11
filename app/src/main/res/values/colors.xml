@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimary">#2b465e</color>
+    <color name="colorPrimaryDark">#1d2e43</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="buttom">#254851</color>
-    <color name="above">#5d95a4</color>
+    <color name="buttom">#0d354a</color>
+    <color name="above">#377292</color>
     <color name="yellow">#ffdd00</color>
     <color name="orange_yellow">#ffcb0e</color>
-    <color name="gray">#9fbccf</color>
+    <color name="gray">#4d8aab</color>
     <color name="orange">#ea820b</color>
     <color name="bold">#75adbc</color>
 </resources>
