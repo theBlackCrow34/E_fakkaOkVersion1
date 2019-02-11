@@ -1,19 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:layout_width="match_parent"
+    android:background="@drawable/back"
+    android:layout_height="match_parent">
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    >
 
     <ImageView
         android:layout_marginTop="60dp"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="120dp"
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
         android:src="@mipmap/ic_launcher"/>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign In With"
+        android:textSize="14sp"
+        android:textColor="@color/yellow"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:src="@mipmap/ic_launcher"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:src="@mipmap/ic_launcher"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/ic_launcher"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OR"
+        android:textColor="@color/yellow"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="0dp"
+            android:id="@+id/signin"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_yellow"
+            android:text="Sign Up"/>
+        <Button
+            android:layout_width="0dp"
+            android:textAllCaps="false"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_gray"
+            android:text="Sign Up"/>
+
+    </LinearLayout>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Skip Login"
+    android:layout_marginTop="10dp"
+    android:textColor="@color/yellow"
+    android:layout_gravity="center"
+    android:layout_marginBottom="10dp"/>
 
 </LinearLayout>
+</ScrollView>
