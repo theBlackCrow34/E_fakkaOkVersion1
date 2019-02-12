@@ -18,4 +18,9 @@
     <string name="upload_photo">Upload Photo</string>
     <string name="adress">Adress</string>
 
+    <string-array name="industry_array">
+        <item>Food</item>
+        <item>Health</item>
+    </string-array>
+
 </resources>
