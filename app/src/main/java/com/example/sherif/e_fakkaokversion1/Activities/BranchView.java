@@ -1,4 +1,4 @@
-package com.example.sherif.e_fakkaokversion1;
+package com.example.sherif.e_fakkaokversion1.Activities;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
+import com.example.sherif.e_fakkaokversion1.R;
 import com.google.zxing.BarcodeFormat;
 import com.google.zxing.MultiFormatWriter;
 import com.google.zxing.WriterException;

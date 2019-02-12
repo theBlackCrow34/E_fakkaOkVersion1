@@ -2,7 +2,7 @@
 <resources>
     <color name="colorPrimary">#2b465e</color>
     <color name="colorPrimaryDark">#1d2e43</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#ffdd00</color>
     <color name="buttom">#0d354a</color>
     <color name="above">#377292</color>
     <color name="yellow">#ffdd00</color>
@@ -10,4 +10,7 @@
     <color name="gray">#4d8aab</color>
     <color name="orange">#ea820b</color>
     <color name="bold">#75adbc</color>
+    <color name="white">#FFFFFF</color>
+    <color name="input_b">#5c8297</color>
+
 </resources>
