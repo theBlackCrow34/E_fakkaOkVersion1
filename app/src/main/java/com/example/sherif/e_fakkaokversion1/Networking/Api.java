@@ -6,6 +6,7 @@ import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.GET;
 import retrofit2.http.POST;
+import retrofit2.http.Query;
 
 public interface Api {
 
@@ -23,11 +24,10 @@ public interface Api {
     );
 
 
-    @FormUrlEncoded
-    @GET("Company/")
+    @GET("Company/login_company.php")
     Call<ResponseBody> logVendor(
-            @Field("username") String username,
-            @Field("password") String password
+            @Query("username") String username,
+            @Query("password") String password
     );
 
 
@@ -44,11 +44,10 @@ public interface Api {
             @Field("encoded_photo") String encoded_photo
     );
 
-    @FormUrlEncoded
-    @GET("")
+    @GET("User/login_user.php")
     Call<ResponseBody> loguser(
-            @Field("username") String username,
-            @Field("password") String password
+            @Query("username") String username,
+            @Query("password") String password
     );
 
 

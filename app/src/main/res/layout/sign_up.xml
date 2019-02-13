@@ -33,6 +33,7 @@
             android:id="@+id/tablayout"
             android:layout_below="@+id/header"
             android:layout_width="match_parent"
+            app:tabIndicator="@color/orange_yellow"
             app:tabSelectedTextColor="@color/white"
             app:tabTextColor="@color/white"
             android:layout_height="wrap_content">
@@ -41,7 +42,6 @@
                 android:id="@+id/useritem"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/button_yellow"
                 android:text="@string/user"
                 />
 

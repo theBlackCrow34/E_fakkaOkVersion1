@@ -7,70 +7,88 @@
     android:layout_width="match_parent"
     android:background="@drawable/back"
     android:layout_height="match_parent">
-
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    >
-    <ImageView
-        android:layout_marginTop="60dp"
-        android:layout_width="150dp"
-        android:layout_gravity="center"
-        android:layout_height="150dp"
-        android:layout_marginBottom="120dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="20dp"
-        android:src="@drawable/logofakka"/>
-    <EditText
-        android:hint="Email address"
-        android:textColorHint="@color/buttom"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:paddingLeft="12dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="20dp"
-        android:textDirection="firstStrong"
-        android:background="@drawable/edit"/>
-    <EditText
-        android:hint="Password"
-        android:textColorHint="@color/buttom"
-        android:layout_width="match_parent"
-        android:paddingLeft="12dp"
-        android:layout_height="50dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="20dp"
-        android:inputType="textPassword"
-        android:textDirection="firstStrong"
-        android:background="@drawable/edit"/>
+        android:layout_height="match_parent">
 
-    <Button
-        android:layout_width="180dp"
-        android:layout_height="wrap_content"
-        android:textAllCaps="false"
-        android:id="@+id/signin_really"
-        android:layout_marginTop="30dp"
-        android:layout_gravity="center"
-        android:layout_marginBottom="10dp"
-        android:background="@drawable/button_yellow"
-        android:text="Sign In"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Forget Password?"
-        android:textColor="#fff"
-        android:textStyle="bold"
-        android:layout_gravity="center"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Click here"
-        android:textSize="14sp"
-        android:textColor="@color/yellow"
-        android:gravity="center"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_marginTop="60dp"
+                android:layout_width="150dp"
+                android:layout_gravity="center"
+                android:layout_height="150dp"
+                android:layout_marginBottom="120dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/logofakka"/>
+            <AutoCompleteTextView
+                android:id="@+id/username"
+                android:hint="Email address"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="@color/buttom"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="12dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textDirection="firstStrong"
+                android:background="@drawable/edit"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/password"
+                android:hint="Password"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="@color/buttom"
+                android:layout_width="match_parent"
+                android:paddingLeft="12dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:inputType="textPassword"
+                android:textDirection="firstStrong"
+                android:background="@drawable/edit"/>
+
+            <Button
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:id="@+id/signin_really"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button_yellow"
+                android:text="Sign In"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forget Password?"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Click here"
+                android:textSize="14sp"
+                android:textColor="@color/yellow"
+                android:gravity="center"/>
 
 
+        </LinearLayout>
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            />
 
-</LinearLayout>
+    </RelativeLayout>
 </ScrollView>
